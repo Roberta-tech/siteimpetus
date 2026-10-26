@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impetus Tecnologia • Inovação, Engenharia de Software e Produtos Digitais</title>
     <meta name="description" content="A Impetus Tecnologia é uma holding e venture builder de tecnologia focada em criar ecossistemas digitais de alta performance e impacto social. Conheça o Mão na Roda.">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300E5FF'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E">
+    <link rel="icon" type="image/jpeg" href="logo-impetus.jpg">
     
     <!-- Google Site Verification (Search Console) -->
     <meta name="google-site-verification" content="dBJ_P2wsg9BPEBR5gDtmLIYPrBrVBCsuWYLNzvQaGHE" />
@@ -94,18 +94,19 @@
             text-decoration: none;
         }
 
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, var(--cyan), var(--purple));
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #000;
-            font-weight: 800;
-            font-size: 20px;
-            box-shadow: 0 0 20px var(--cyan-glow);
+        .logo-img {
+            height: 42px;
+            width: auto;
+            border-radius: 8px;
+            object-fit: contain;
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .logo:hover .logo-img {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 229, 255, 0.4);
         }
 
         .logo-text {
@@ -553,7 +554,7 @@
     <nav>
         <div class="container nav-content">
             <a href="#" class="logo">
-                <div class="logo-icon">I</div>
+                <img src="logo-impetus.jpg" alt="Impetus Tecnologia" class="logo-img">
                 <div class="logo-text">
                     <span class="logo-title">IMPETUS</span>
                     <span class="logo-tag">Holding & Tech</span>
@@ -572,6 +573,10 @@
     <!-- HERO SECTION -->
     <header class="hero">
         <div class="container">
+            <div style="display: flex; justify-content: center; margin-bottom: 24px;">
+                <img src="logo-impetus.jpg" alt="Impetus - Impulsionando a Tecnologia do Futuro" style="max-height: 190px; width: auto; border-radius: 20px; box-shadow: 0 10px 40px rgba(0, 229, 255, 0.25), 0 0 60px rgba(255, 0, 128, 0.15); border: 1px solid rgba(255, 255, 255, 0.12);">
+            </div>
+
             <div class="badge-hero">
                 <span>✨</span>
                 <span>Inovação, Engenharia de Software & Produtos Digitais</span>
@@ -712,7 +717,7 @@
                 
                 <div class="contact-details">
                     <div class="contact-item">
-                        <span>✉️ E-mail:</span> contato@impetus.ia.br
+                        <span>✉️ E-mail:</span> <a href="mailto:startup.impetus@gmail.com" style="color: var(--cyan); text-decoration: none; font-weight: 600;">startup.impetus@gmail.com</a>
                     </div>
                     <div class="contact-item">
                         <span>📍 Localização:</span> Araraquara, SP • Brasil
